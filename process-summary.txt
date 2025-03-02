@@ -1,0 +1,6 @@
+1. 로컬 환경에서 vs code를 이용해서 python 코드를 짜고, 이를 google cloud 환경에서 배포하려 한다.
+2. 로컬 환경에서 코드를 짜고 API를 호출하기 위해서는 1) API 키값 활용 2) google auth로 자격을 증명 < 둘 중 하나의 조건을 만족해야한다.
+
+3. 이 때, google cloud(배포) 환경과, 내가 작업하는 로컬의 환경을 동일하게 하기 위해서 docker를 쓰게 된다.
+4. docker를 google cloud 환경에서 활용하기 위해서는 '설정'을 해줘야 한다. 
+내-  자격 증명된 'service account(및 project name)'로 로그인 후 docker가 gcr을 사용하도록 연결해줘야한다.

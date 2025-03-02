@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>점심 메뉴 추천</title>
+</head>
+<body>
+    <h1>점심 메뉴 추천</h1>
+    <form action="/" method="post">
+        <label>어제 점심 메뉴:</label>
+        <input type="text" name="yesterday_lunch" required><br><br>
+        <label>오늘 아침 식사:</label>
+        <input type="text" name="breakfast_today" required><br><br>
+        <label>오늘의 기분:</label>
+        <input type="text" name="mood" required><br><br>
+        <label>먹고 싶은 음식의 특성:</label>
+        <input type="text" name="food_preference" required><br><br>
+        <input type="submit" value="추천받기">
+    </form>
+
+    <!-- 추천 결과가 있을 경우 출력 -->
+    {% if recommendation %}
+    <h2>추천 점심 메뉴</h2>
+    <p>{{ recommendation }}</p>
+    {% endif %}
+</body>
+</html>
