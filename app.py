@@ -10,8 +10,6 @@ from vertexai.generative_models import GenerativeModel
 PROJECT_ID = "peppy-web-452401-v7"
 REGION = "us-central1"
 
-#GOOGLE_API_KEY = "AIzaSyDvr8x14u-B-z2bEB0d15qWDWB2NaRQo9k"
-
 # Vertex AI 초기화 (환경 변수 GOOGLE_APPLICATION_CREDENTIALS 또는 ADC가 설정되어 있어야 합니다.)
 vertexai.init(project=PROJECT_ID, location=REGION)
 
